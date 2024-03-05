@@ -1,0 +1,92 @@
+img{
+    width: 100px;
+    position: relative;
+
+}
+.name{
+    position: absolute;
+    margin-left: 110px;
+    font-family: "Playball", cursive;
+    font-size: 25px;
+    color: rgb(219, 116, 116);
+    cursor: pointer;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    background-color: rgb(210, 233, 188);
+
+  
+}
+.rightSide a {
+    margin-right: 65px;
+    color: black;
+    font-family: "Kode Mono", monospace;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3;
+    position: relative;
+    z-index: 1;
+    
+}
+
+ .rightSide a::before{
+    content: "";
+    left: -20px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(97, 46, 46);
+    opacity: 0.3;
+    transition: .3s;
+    
+
+ }
+ .rightSide a:hover:before{
+    width: 150%
+ }
+
+@media (max-width:300px){
+    .leftSide img{
+        width: 50px;
+        height: 50px;
+        margin-left: 16px;
+    }
+    .rightSide a{
+        margin-right: 20px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 5px;
+    }
+}
+
+.leftSide {
+    display: flex;
+
+}
+  
+/* @media (max-width:300px){
+    .leftSide img{
+        width: 50px;
+        height: 50px;
+        margin-left: 16px;
+    }
+    .rightSide a{
+        margin-right: 5px;
+        font-size: small;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 5px;
+    }
+} */

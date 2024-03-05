@@ -1,0 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(225,176,207,1) 15%, rgba(203,179,214,1) 39%, rgba(189,181,219,1) 55%, rgba(168,184,226,1) 78%, rgba(148,187,233,1) 100%);
+}
